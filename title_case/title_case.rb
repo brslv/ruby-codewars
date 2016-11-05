@@ -23,7 +23,5 @@ def title_case(title, minor_words = "")
 end
 
 puts title_case('a clash of KINGS', 'a an the of') # should return: 'A Clash of Kings'
-
 puts title_case('THE WIND IN THE WILLOWS', 'The In') # should return: 'The Wind in the Willows'
-
 puts title_case('the quick brown fox') # should return: 'The Quick Brown Fox'
