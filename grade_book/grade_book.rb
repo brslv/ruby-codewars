@@ -15,6 +15,8 @@ def get_grade(s1, s2, s3)
   hsh = {a: [90, 100], b: [80, 90], c: [70, 80], d: [60, 70],f: [0, 60]}
   score = [s1, s2, s3].reduce(:+) / 3
 
+  if score == 100 return "A"
+
   hsh.each do |grade, range|
     return grade.to_s.upcase if (range[0]...range[1]).include?(score)
   end
@@ -37,8 +39,8 @@ puts "---"
 
 def get_grade(s1, s2, s3)
   case (s1 + s2 + s3).fdiv 3
-  when 90..100 then "A"
-  when 80...90 then "B"
+  when 90..100 then "A" # inclusive
+  when 80...90 then "B" # exclusive
   when 70...80 then "C"
   when 60...70 then "D"
   else "F"
