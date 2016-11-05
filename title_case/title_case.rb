@@ -19,7 +19,7 @@ title_case('the quick brown fox') # should return: 'The Quick Brown Fox'
 =end
 
 def title_case(title, minor_words = "")
-    title.capitalize.split(/ /).map{ |w| minor_words.downcase.split(/ /).include?(w) ? w : w.capitalize }.join(' ')
+  title.capitalize.split(/ /).map{ |w| minor_words.downcase.split(/ /).include?(w) ? w : w.capitalize }.join(' ')
 end
 
 puts title_case('a clash of KINGS', 'a an the of') # should return: 'A Clash of Kings'

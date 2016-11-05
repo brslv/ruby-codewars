@@ -5,7 +5,7 @@ Note: The function accepts an integer and returns an integer
 =end
 
 def square_digits num
-    num.to_s.split('').map{ |d| d.to_i ** 2 }.join('').to_s
+  num.to_s.split('').map{ |d| d.to_i ** 2 }.join('').to_s
 end
 
 puts square_digits(9118) # 811164
