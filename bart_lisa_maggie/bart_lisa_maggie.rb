@@ -24,7 +24,7 @@ def list names
 end
 
 p list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}]) # 'Bart, Lisa, Maggie, Homer & Marge'
-list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'}]) # 'Bart, Lisa & Maggie'
+p list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'}]) # 'Bart, Lisa & Maggie'
 p list([{name: 'Bart'},{name: 'Lisa'}]) # 'Bart & Lisa'
 p list([{name: 'Bart'}]) # 'Bart', "Wrong output for a single name"
 p list([]) # ''
